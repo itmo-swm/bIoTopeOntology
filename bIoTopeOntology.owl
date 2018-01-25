@@ -1,0 +1,696 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/inna/ontologies/2018/0/untitled-ontology-13"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/inna/ontologies/2018/0/untitled-ontology-13">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <DataProperty IRI="/routeDescription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Construction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/wasteTruckID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WasteCollectionOperator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mixed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.schema.org/Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Place"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPrice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WasteProcessingOperator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/urlAddress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#servedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Driver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContainers"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectedThrough"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Person"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ownedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WasteContainer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/wasteTruckCoordinates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WasteTruck"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#allowedForGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SensorBlock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WasteDump"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/maxCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/wasteWeight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Route"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bottle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasteType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#allowedWasteType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inRoute"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOpened"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Waste"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/wasteContainerID"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.schema.org/Vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dangerous"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BottleBank"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasteCollectedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Janitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IoTAccessPoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#drivenBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#lockatedIn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Glass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AccessGroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UtilityServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operatedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plastic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/PriceSpecification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSensorBlock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/OpeningHoursSpecification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citizen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#employedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bottleType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#managedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WastePoint"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WasteProcessingPlant"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/realTimeCapacity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsDevices"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/updated"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Bottle"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BottleBank"/>
+        <Class IRI="#WasteContainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citizen"/>
+        <Class IRI="http://schema.org/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Construction"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Container"/>
+        <Class IRI="#WasteContainer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dangerous"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Driver"/>
+        <Class IRI="http://schema.org/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Glass"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IoTAccessPoint"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Janitor"/>
+        <Class IRI="http://schema.org/Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metal"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mixed"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organic"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plastic"/>
+        <Class IRI="#Waste"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SensorBlock"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UtilityServices"/>
+        <Class IRI="http://www.schema.org/Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WasteCollectionOperator"/>
+        <Class IRI="http://www.schema.org/Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WasteDump"/>
+        <Class IRI="http://schema.org/Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WastePoint"/>
+        <Class IRI="http://schema.org/Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WasteProcessingOperator"/>
+        <Class IRI="http://www.schema.org/Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WasteProcessingPlant"/>
+        <Class IRI="http://schema.org/Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WasteTruck"/>
+        <Class IRI="http://www.schema.org/Vehicle"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#connectedThrough"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#contains"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isOpened"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#servedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allowedForGroup"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allowedForGroup"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#allowedWasteType"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bottleType"/>
+        <Class IRI="#BottleBank"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectedThrough"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsDevices"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#drivenBy"/>
+        <Class IRI="#WasteTruck"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#employedBy"/>
+        <Class IRI="#Janitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasContainers"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inRoute"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inRoute"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOpened"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#lockatedIn"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#managedBy"/>
+        <Class IRI="#WasteDump"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#managedBy"/>
+        <Class IRI="#WasteProcessingPlant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#operatedBy"/>
+        <Class IRI="#WasteTruck"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#servedBy"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasteCollectedBy"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasteCollectedBy"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasteType"/>
+        <Class IRI="#Container"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPrice"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSensorBlock"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#allowedForGroup"/>
+        <Class IRI="#AccessGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#allowedWasteType"/>
+        <Class IRI="#Waste"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bottleType"/>
+        <Class IRI="#Bottle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bottleType"/>
+        <Class IRI="#Glass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connectedThrough"/>
+        <Class IRI="#IoTAccessPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#contains"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsDevices"/>
+        <Class IRI="#IoTAccessPoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsDevices"/>
+        <Class IRI="#SensorBlock"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#drivenBy"/>
+        <Class IRI="#Driver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#employedBy"/>
+        <Class IRI="#UtilityServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasContainers"/>
+        <Class IRI="#WasteContainer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inRoute"/>
+        <Class IRI="#Route"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOpened"/>
+        <Class IRI="http://schema.org/OpeningHoursSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#lockatedIn"/>
+        <Class IRI="#WastePoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#lockatedIn"/>
+        <Class IRI="#WasteTruck"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#managedBy"/>
+        <Class IRI="#WasteProcessingOperator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#operatedBy"/>
+        <Class IRI="#WasteCollectionOperator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="http://www.schema.org/Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ownedBy"/>
+        <Class IRI="#Citizen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#servedBy"/>
+        <Class IRI="#Citizen"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#servedBy"/>
+        <Class IRI="#UtilityServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasteCollectedBy"/>
+        <Class IRI="#WasteCollectionOperator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasteType"/>
+        <Class IRI="#Construction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasteType"/>
+        <Class IRI="#Dangerous"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasteType"/>
+        <Class IRI="#Glass"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasteType"/>
+        <Class IRI="#Metal"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasteType"/>
+        <Class IRI="#Mixed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasteType"/>
+        <Class IRI="#Organic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasteType"/>
+        <Class IRI="#Plastic"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPrice"/>
+        <Class IRI="http://schema.org/PriceSpecification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSensorBlock"/>
+        <Class IRI="#SensorBlock"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/updated"/>
+        <DataProperty IRI="/realTimeCapacity"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/updated"/>
+        <DataProperty IRI="/temperature"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="/updated"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="/maxCapacity"/>
+        <Class IRI="#WasteContainer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/realTimeCapacity"/>
+        <Class IRI="#WasteContainer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/routeDescription"/>
+        <Class IRI="#Route"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/temperature"/>
+        <Class IRI="#WasteContainer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/updated"/>
+        <Class IRI="#WasteContainer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/urlAddress"/>
+        <Class IRI="#IoTAccessPoint"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/wasteContainerID"/>
+        <Class IRI="#WasteContainer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/wasteTruckCoordinates"/>
+        <Class IRI="#WasteTruck"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/wasteTruckID"/>
+        <Class IRI="#WasteTruck"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/wasteWeight"/>
+        <Class IRI="#WasteContainer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/wasteWeight"/>
+        <Class IRI="#WasteTruck"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/maxCapacity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/realTimeCapacity"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/routeDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/temperature"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/updated"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/urlAddress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/wasteContainerID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/wasteTruckCoordinates"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/wasteTruckID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/wasteWeight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://schema.org/OpeningHoursSpecification</IRI>
+        <IRI>http://schema.org</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://schema.org/OpeningHoursSpecification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OpeningHoursSpecification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://schema.org/Person</IRI>
+        <IRI>http://schema.org</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://schema.org/Person</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://schema.org/Place</IRI>
+        <IRI>http://schema.org</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://schema.org/Place</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://schema.org/PriceSpecification</IRI>
+        <IRI>http://schema.org</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://schema.org/PriceSpecification</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">PriceSpecification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.schema.org/Organization</IRI>
+        <IRI>http://schema.org/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.schema.org/Organization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://www.schema.org/Vehicle</IRI>
+        <IRI>http://schema.org</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.schema.org/Vehicle</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Vehicle</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
