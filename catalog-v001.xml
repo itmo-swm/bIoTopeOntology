@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1516887473012" name="http://www.semanticweb.org/inna/ontologies/2018/0/untitled-ontology-13" uri="bIoTopeOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://purl.org/net/swm-ontology/" uri="bIoTopeOntology-purl.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://purl.org/net/swm-ontology/" uri="bIoTopeOntology-v.11.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="http://schema.mobivoc.org/" uri="mobiVoc.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://sdn.ifmo.ru/waste-management-system/swm-ontology/" uri="1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://sdn.ifmo.ru/waste-management-system/swm-ontology/" uri="bIoTopeOntology-v.10.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://sdn.ifmo.ru/waste-management-system/swm-ontology/" uri="bIoTopeOntology-v.5.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://sdn.ifmo.ru/waste-management-system/swm-ontology/" uri="bIoTopeOntology-v.6.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://sdn.ifmo.ru/waste-management-system/swm-ontology/" uri="bIoTopeOntology-v.7.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://sdn.ifmo.ru/waste-management-system/swm-ontology/" uri="bIoTopeOntology-v.8.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://sdn.ifmo.ru/waste-management-system/swm-ontology/" uri="bIoTopeOntology-v.9.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://www.semanticweb.org/inna/ontologies/2018/0/untitled-ontology-13" uri="bIoTopeOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://www.semanticweb.org/inna/ontologies/2018/0/untitled-ontology-13" uri="bIoTope_Ontology-v.3.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1527685650760" name="duplicate:http://www.semanticweb.org/inna/ontologies/2018/0/untitled-ontology-13" uri="bIoTope_Ontology-v.4.owl"/>
     </group>
 </catalog>
